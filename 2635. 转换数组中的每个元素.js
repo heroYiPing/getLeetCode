@@ -30,4 +30,19 @@ const newArray = map(arr, plusone); // [2,3,4]
  * @param {Function} fn
  * @return {number[]}
  */
-var map = function (arr, fn) {}
+var map = function (arr, fn) {
+  // 先创建个空数组
+  let newArr = [];
+  // 循环数组
+  for (let index = 0; index < arr.length; index++) {
+    // 对数据进行处理
+    newArr[index] = fn(arr[index], index);
+  }
+  return newArr;
+};
+
+console.log(
+  map([10, 20, 30], function plusI(n, i) {
+    return n + i;
+  })
+);
