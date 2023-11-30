@@ -9,7 +9,7 @@
       "request": "launch",
       "name": "启动程序",
       "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}\\2626. 数组归约运算.js"
+      "program": "${workspaceFolder}\\2666. 只允许一次函数调用.js"
     }
   ]
 }

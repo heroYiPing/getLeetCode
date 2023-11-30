@@ -29,26 +29,26 @@ const newArray = filter(arr, fn); // [20, 30]
 输入：arr = [-2,-1,0,1,2], fn = function plusOne(n) { return n + 1 }
 输出：[-2,0,1,2]
 解释：
-像 0 这样的假值应被过滤掉 */
-
+像 0 这样的假值应被过滤掉
+ */
 /**
  * @param {number[]} arr
  * @param {Function} fn
  * @return {number[]}
  */
 var filter = function (arr, fn) {
-  let newArr = [];
+  let newArr = []
   for (let i = 0; i < arr.length; i++) {
-    let flag = fn(arr[i], i);
+    let flag = fn(arr[i], i)
     if (flag) {
-      newArr.push(arr[i]);
+      newArr.push(arr[i])
     }
   }
-  return newArr;
-};
+  return newArr
+}
 
 console.log(
   filter([-2, -1, 0, 1, 2], function plusOne(n) {
-    return n + 1;
+    return n + 1
   })
-);
+)
