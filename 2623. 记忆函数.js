@@ -48,6 +48,7 @@ actions = ["call","getCallCount"]
 values = [[5],[]]
 输出：[8,1]
 解释：
+ fib 接收一个整型参数 n ，如果 n <= 1 则返回 1，否则返回 fib (n - 1) + fib (n - 2)。
 fib(5) = 8 // "call"
 "getCallCount" - 总调用数：1
 
@@ -66,16 +67,23 @@ fnName 为 "sum", "factorial" 和 "fib" 中的一个 */
  * @return {Function}
  */
 function memoize(fn) {
-  return function (...args) {};
+  let cache = {}
+  return function (...args) {
+    if (cache.hasOwnProperty(args)) {
+      return cache[args]
+    }
+    // 将参数作为字段名存入对象中，字段值为返回的结果
+    cache[args] = fn(...args)
+    // 返回结果
+    return cache[args]
+  }
 }
 
-/**
- * let callCount = 0;
- * const memoizedFn = memoize(function (a, b) {
- *	 callCount += 1;
- *   return a + b;
- * })
- * memoizedFn(2, 3) // 5
- * memoizedFn(2, 3) // 5
- * console.log(callCount) // 1
- */
+let callCount = 0
+const memoizedFn = memoize(function (a, b) {
+  callCount += 1
+  return a + b
+})
+memoizedFn(2, 2) // 4
+memoizedFn(2, 3) // 5
+console.log(callCount) // 2

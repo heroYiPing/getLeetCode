@@ -9,7 +9,7 @@
       "request": "launch",
       "name": "启动程序",
       "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}\\2666. 只允许一次函数调用.js"
+      "program": "${workspaceFolder}\\2623. 记忆函数.js"
     }
   ]
 }
