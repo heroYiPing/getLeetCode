@@ -9,7 +9,7 @@
       "request": "launch",
       "name": "启动程序",
       "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}\\2623. 记忆函数.js"
+      "program": "${workspaceFolder}\\2723. 两个 Promise 对象相加.js"
     }
   ]
 }
