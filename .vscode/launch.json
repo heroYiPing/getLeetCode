@@ -9,7 +9,7 @@
       "request": "launch",
       "name": "启动程序",
       "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}\\2621. 睡眠函数.js"
+      "program": "${workspaceFolder}\\2715. 执行可取消的延迟函数.js"
     }
   ]
 }
