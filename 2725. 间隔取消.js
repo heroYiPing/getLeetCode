@@ -108,7 +108,7 @@ const fn = (x) => {
 };
 const args = [2];
 const t = 500;
-
+// 因为cancellable 本身是一个函数 所以加括号赋值的时候就执行了
 let cancelT = cancellable(fn, args, t);
 
 // cancellable(fn, args, t);

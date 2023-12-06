@@ -9,7 +9,7 @@
       "request": "launch",
       "name": "启动程序",
       "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}\\2725. 间隔取消.js"
+      "program": "${workspaceFolder}\\2637. 有时间限制的 Promise 对象.js"
     }
   ]
 }
