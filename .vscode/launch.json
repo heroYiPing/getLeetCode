@@ -9,7 +9,7 @@
       "request": "launch",
       "name": "启动程序",
       "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}\\2622. 有时间限制的缓存.js"
+      "program": "${workspaceFolder}\\2627. 函数防抖.js"
     }
   ]
 }
